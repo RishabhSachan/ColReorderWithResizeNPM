@@ -8,11 +8,11 @@
 
 <hr />
 
-[![Build Status](https://img.shields.io/travis/StephenDunneIRE/deep-object-diff-mod/master.svg?style=flat-square)](https://travis-ci.org/StephenDunneIRE/deep-object-diff-mod/master)
-[![Code Coverage](https://img.shields.io/coveralls/StephenDunneIRE/deep-object-diff-mod.svg?style=flat-square)](https://coveralls.io/github/StephenDunneIRE/deep-object-diff-mod?branch=master)
-[![version](https://img.shields.io/npm/v/deep-object-diff-mod.svg?style=flat-square)](https://www.npmjs.com/package/deep-object-diff-mod)
-[![downloads](https://img.shields.io/npm/dm/deep-object-diff-mod.svg?style=flat-square)](http://npm-stat.com/charts.html?package=deep-object-diff-mod&from=2016-11-23)
-[![MIT License](https://img.shields.io/npm/l/deep-object-diff-mod.svg?style=flat-square)](https://github.com/StephenDunneIRE/deep-object-diff-mod/blob/master/LICENSE)
+[![Build Status](https://img.shields.io/travis/StephenDunneIRE/datatables.net-colresizewithreorder-npm/master.svg?style=flat-square)](https://travis-ci.org/StephenDunneIRE/datatables.net-colresizewithreorder-npm/master)
+[![Code Coverage](https://img.shields.io/coveralls/StephenDunneIRE/datatables.net-colresizewithreorder-npm.svg?style=flat-square)](https://coveralls.io/github/StephenDunneIRE/datatables.net-colresizewithreorder-npm?branch=master)
+[![version](https://img.shields.io/npm/v/datatables.net-colresizewithreorder-npm.svg?style=flat-square)](https://www.npmjs.com/package/datatables.net-colresizewithreorder-npm)
+[![downloads](https://img.shields.io/npm/dm/datatables.net-colresizewithreorder-npm.svg?style=flat-square)](http://npm-stat.com/charts.html?package=datatables.net-colresizewithreorder-npm&from=2016-11-23)
+[![MIT License](https://img.shields.io/npm/l/datatables.net-colresizewithreorder-npm.svg?style=flat-square)](https://github.com/StephenDunneIRE/datatables.net-colresizewithreorder-npm/blob/master/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 ColReorderResize adds the ability for the end user to click and drag column headers to reorder and resize a table as they see fit, to DataTables. See the [documentation](http://legacy.datatables.net/extras/thirdparty/ColReorderWithResize/) for full details.
