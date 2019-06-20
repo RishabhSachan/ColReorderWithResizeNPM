@@ -8,8 +8,8 @@
 
 <hr />
 
-[![version](https://img.shields.io/npm/v/datatables.net-colresizewithreorder-npm.svg?style=flat-square)](https://www.npmjs.com/package/datatables.net-colresizewithreorder-npm)
-[![downloads](https://img.shields.io/npm/dm/datatables.net-colresizewithreorder-npm.svg?style=flat-square)](http://npm-stat.com/charts.html?package=datatables.net-colresizewithreorder-npm&from=2016-11-23)
+[![version](https://img.shields.io/npm/v/datatables.net-colreorderwithresize-npm.svg?style=flat-square)](https://www.npmjs.com/package/datatables.net-colreorderwithresize-npm)
+[![downloads](https://img.shields.io/npm/dm/datatables.net-colreorderwithresize-npm.svg?style=flat-square)](http://npm-stat.com/charts.html?package=datatables.net-colreorderwithresize-npm&from=2016-11-23)
 [![MIT License](https://img.shields.io/npm/l/ColReorderWithResizeNPM.svg?style=flat-square)](https://github.com/StephenDunneIRE/ColReorderWithResizeNPM/blob/master/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
