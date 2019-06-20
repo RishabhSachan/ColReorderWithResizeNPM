@@ -9,7 +9,7 @@
 <hr />
 
 [![Build Status](https://img.shields.io/travis/StephenDunneIRE/datatables.net-colresizewithreorder-npm/master.svg?style=flat-square)](https://travis-ci.org/StephenDunneIRE/datatables.net-colresizewithreorder-npm/master)
-[![Code Coverage](https://img.shields.io/coveralls/StephenDunneIRE/datatables.net-colresizewithreorder-npm.svg?style=flat-square)](https://coveralls.io/github/StephenDunneIRE/datatables.net-colresizewithreorder-npm?branch=master)
+[![Code Coverage](https://img.shields.io/coveralls/StephenDunneIRE/ColReorderWithResizeNPM.svg?style=flat-square)](https://coveralls.io/github/StephenDunneIRE/ColReorderWithResizeNPM?branch=master)
 [![version](https://img.shields.io/npm/v/datatables.net-colresizewithreorder-npm.svg?style=flat-square)](https://www.npmjs.com/package/datatables.net-colresizewithreorder-npm)
 [![downloads](https://img.shields.io/npm/dm/datatables.net-colresizewithreorder-npm.svg?style=flat-square)](http://npm-stat.com/charts.html?package=datatables.net-colresizewithreorder-npm&from=2016-11-23)
 [![MIT License](https://img.shields.io/npm/l/datatables.net-colresizewithreorder-npm.svg?style=flat-square)](https://github.com/StephenDunneIRE/datatables.net-colresizewithreorder-npm/blob/master/LICENSE)
