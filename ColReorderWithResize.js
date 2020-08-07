@@ -21,6 +21,9 @@
  *  2. Fixed issues with column width calculations which allowed column headers to become misaligned with table body when using scroller plugin.
  * Modified:    June 2018 by Jeff Walter - jeffreydwalter@gmail.com
  *  1. Took a second stab at this plugin. Made things work for both scroller and non-scroller tables.
+ * Modified:    July 2020 by Rishabh Sachan - rishabh_sachan@yahoo.co.in
+ * 1. Fix for not able to resize when using horizontal scroll
+ * 2. Fix stop changing other columns while resize
  * Language:    Javascript
  * License:     MIT
  * Project:     DataTables
@@ -1170,9 +1173,6 @@ $.extend( ColReorder.prototype, {
 
                     if(this.table_size + moveLength > $scrollHeadTableWrapper.width()) {
                         // Resize the header too (if sScrollX is enabled).
-                        if($scrollHeadTableWrapper.length) {
-                            $($scrollHeadTableWrapper[0].childNodes[0].childNodes[0]).width(this.table_size + moveLength);
-                        }
                         $($scrollHeadInner).width(this.table_size + moveLength);
 
                         // Resize the table too (if sScrollX is enabled).
@@ -1217,13 +1217,6 @@ $.extend( ColReorder.prototype, {
                     }
                 }
                 else {
-                    // Hack to calculate the minimum width of the column based on contents.
-                    $scrollBodyNThNext.width('1%');
-                    var minNThNextWidth = $scrollBodyNThNext.width();
-                    $scrollBodyNThNext.width(this.s.mouse.nextStartWidth);
-
-                    if($scrollBodyNThNext.width() <= minNThNextWidth) { return; }
-
                     $nTh.width(nThWidth);
                     $scrollBodyNTh.width(nThWidth);
                 }
