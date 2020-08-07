@@ -5,6 +5,7 @@
 
   This is a simple fork of jeffreydwalter's ColReorderWithResize package that adds NPM support
 </div>
+  Other Columns Will not be resized when scrollX is true.
 
 <hr />
 
