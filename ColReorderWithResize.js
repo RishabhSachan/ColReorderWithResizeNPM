@@ -1170,19 +1170,6 @@ $.extend( ColReorder.prototype, {
                     if((this.table_size === undefined || this.table_size < 0) && $scrollHeadTableWrapper.length > 0) {
                         this.table_size = $($scrollHead[0].childNodes[0].childNodes[0]).width();
                     }
-
-                    if(this.table_size + moveLength > $scrollHeadTableWrapper.width()) {
-                        // Resize the header too (if sScrollX is enabled).
-                        $($scrollHeadInner).width(this.table_size + moveLength);
-
-                        // Resize the table too (if sScrollX is enabled).
-                        var new_table_size = this.table_size;
-                        if(this.table_size + moveLength > $scrollHeadTableWrapper.width()) {
-                            new_table_size += moveLength;
-                        }
-                        $scrollBody.closest('.dataTables_scroll').find('.dataTables_scrollHead table').first().width(new_table_size);
-                        $scrollBody.closest('.dataTables_scroll').find('.dataTables_scrollBody table').first().width(new_table_size);
-                    }
                 }
 
                 // When resizing the header, also resize the table's body (when enabling the Scroller, the table's header and
@@ -1204,7 +1191,7 @@ $.extend( ColReorder.prototype, {
                 if(moveLength < 0) {
                     // Hack to calculate the minimum width of the column based on contents.
                     $scrollBodyNTh.width('1%');
-                    var minNThWidth = $scrollBodyNTh.width();
+                    var minNThWidth = 10;
                     $scrollBodyNTh.width(this.s.mouse.startWidth);
 
                     if(nThWidth >= minNThWidth) {
@@ -1220,6 +1207,13 @@ $.extend( ColReorder.prototype, {
                     $nTh.width(nThWidth);
                     $scrollBodyNTh.width(nThWidth);
                 }
+                var new_table_size = this.table_size;
+                new_table_size += moveLength;
+                // Resize the header too (if sScrollX is enabled).
+                $($scrollHeadInner).width(this.table_size + moveLength);
+                // Resize the table too (if sScrollX is enabled).
+                $scrollBody.closest('.dataTables_scroll').find('.dataTables_scrollHead table').first().width(new_table_size);
+                $scrollBody.closest('.dataTables_scroll').find('.dataTables_scrollBody table').first().width(new_table_size);
             }
         }
         else if(this.s.allowReorder) {
