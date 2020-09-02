@@ -24,6 +24,7 @@
  * Modified:    July 2020 by Rishabh Sachan - rishabh_sachan@yahoo.co.in
  * 1. Fix for not able to resize when using horizontal scroll
  * 2. Fix stop changing other columns while resize
+ * 3. Fix column widths changing on adjustColumnSizing call and layout changes (works with fixed table layout)
  * Language:    Javascript
  * License:     MIT
  * Project:     DataTables
@@ -1324,7 +1325,11 @@ $.extend( ColReorder.prototype, {
             this.s.dt.aoColumns[colResized].bSortable = this.s.dt.aoColumns[colResized].CRbSortableCache;
 
             //Save the new resized column's width
-            this.s.dt.aoColumns[colResized].sWidth = $(this.s.mouse.resizeElem).width() + "px";
+            this.s.dt.aoColumns[colResized].sWidth = $(this.s.mouse.resizeElem)[0].style.width;
+
+            //fix column widths changing due to adjust column sizing
+            const aoColumns = this.s.dt.aoColumns;
+            for (let i = 0; i < aoColumns.length; i++) { aoColumns[i].sWidth = aoColumns[i].nTh.style.width; }
 
             //If other columns might have changed their size, save their size too
             scrollXEnabled = this.s.dt.oInit.sScrollX === "" ? false : true;
